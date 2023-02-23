@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checker</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="checker">
+        <div class="top_bar">
+            <img onclick="click_logo()" src="./checker_logo.svg" alt="" class="logo">
+            <div class="top_bar_icons">
+                <img onclick="click_friends()" src="./icons/friends_icon.svg" alt="" class="top_bar_icon friends">
+                <img onclick="click_ring()" src="./icons/ring_icon.svg" alt="" class="top_bar_icon ring">
+                <img onclick="click_profile()" src="./icons/profile.svg" alt="" class="top_bar_icon profile">
+            </div>
+        </div>
+
+
+        <div class="mySmoke">
+            <div class="menu_bar">
+                <div class="B_and_Tit">
+                    <button onclick=""><img class="prev_i" src="./icons/prev.svg" alt=""></button>
+                    <span class="title">나의 흡연</span>
+                </div>
+
+                <div class="button_i">
+                    <button onclick="click_day()"><img id="day_icon" class="menu_bar_i day" src="./icons/day.svg"
+                            alt="day"></button>
+                    <button onclick="click_week()"><img id="week_icon" class="menu_bar_i week" src="./icons/week.svg"
+                            alt="week"></button>
+                    <button onclick="click_month()"><img id="month_icon" class="menu_bar_i month"
+                            src="./icons/month.svg" alt="month"></button>
+                    <button onclick=""><img class="more_i" src="./icons/more.svg" alt="more"></button>
+                </div>
+            </div>
+            <div id="area_graph">
+                <div class="mySmoke_graph">
+                    <img src="./mySmoke_graph_day.svg" alt="" class="graph" id="day_graph">
+                    <img src="./mySmoke_graph_week.svg" alt="" class="graph" id="week_graph">
+                    <img src="./mySmoke_graph_day.svg" alt="" class="graph" id="month_graph">
+                </div>
+            </div>
+        </div>
+
+        <div class="mySmoke_info">
+            <ul class="info">
+                <li class="min_tit">오늘</li>
+                <li class="max_p">12개비</li>
+            </ul>
+            <ul class="info">
+                <li class="min_tit">어제</li>
+                <li class="max_p">12개비</li>
+            </ul>
+            <ul class="info">
+                <li class="min_tit">평균 흡연 간격</li>
+                <li class="max_p">12개비</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
