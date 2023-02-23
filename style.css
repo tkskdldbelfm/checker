@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.min_tit {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.max_p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.checker {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*top_bar*/
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: white;
+    width: 100%;
+    height: 109px;
+    margin: auto;
+    z-index: 1;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    position: fixed;
+}
+
+.top_bar .logo {
+    width: 82px;
+    height: 28px;
+    margin-left: 24px;
+    margin-bottom: 21px;
+}
+
+.top_bar .top_bar_icons {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    margin-right: 24px;
+    margin-bottom: 21px;
+}
+
+.top_bar .top_bar_icons .friends,
+.ring {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    margin-right: 12px;
+}
+
+
+
+/*mySmoke*/
+button {
+    padding: 0;
+    appearance: none;
+    background: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.prev_i {
+    margin-left: 6px;
+}
+
+.more_i {
+    margin-left: 9px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.mySmoke {
+    position: relative;
+    width: 100%;
+    margin-top: 145px;
+    z-index: 0;
+}
+
+#area_graph {
+    margin-top: -50px;
+    background-color: white;
+    width: 100%;
+    height: 290px;
+    border-radius: 24px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mySmoke .menu_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    z-index: 0;
+}
+
+.mySmoke .menu_bar .B_and_Tit {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.mySmoke .menu_bar .button_i {
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 116px;
+}
+
+.mySmoke .menu_bar .button_i .menu_bar_i {
+    padding-right: 12px;
+}
+
+#week_icon,
+#month_icon {
+    opacity: 30%;
+}
+
+.mySmoke_graph {
+    width: 300px;
+    height: 136.71px;
+    display: flex;
+    justify-content: center;
+}
+
+#week_graph,
+#month_graph {
+    opacity: 0%;
+}
+
+.mySmoke_graph .graph {
+    width: 300px;
+    height: 136.71px;
+    position: absolute;
+}
+
+
+/*mySmoke_info*/
+.mySmoke_info {
+    display: flex;
+    justify-content: center;
+}
+
+.mySmoke_info .info {
+    width: 114px;
+    padding: 65px 0px 60px 0px;
+    margin: 0px;
+}
+
+.mySmoke_info .info li {
+    display: flex;
+    justify-content: center;
+}

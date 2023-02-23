@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+            section{
+                
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            ul{
+                list-style-type:decimal;
+                color: aquamarine;
+            }
+            input{
+                border-color: cornflowerblue;
+                background-color: #fff;
+                width: 200px;
+                height: 48px;
+                
+            }
+
+        </style>
+        <section>
+        <h1 class = "halill">영훈이가 할 일</h1>
+        <input class = "btn" type = "button" value = "보기" onclick="beaksu()"/>
+        <input class = "btn" type = "button" value = "내일은?" onclick="reset()"/>
+        <ul id = "halills"></ul>
+        
+        </section>
+        <script> 
+        
+        var ul = document.getElementById('halills');
+        var inputs = document.getElementsByTagName('input');
+        
+        var beaksu = function(){
+            
+            var color = new Array('#9bca43', '#7a0c34', '#58C9B9', '#A593E0', '#E71D36');
+            var halills = new Array('공부안하기', '누워있기', '유튜브', '넷플릭스', '잠');
+            function randomItem(a) {
+                return a[Math.floor(Math.random()*a.length)];
+            }
+            for(var i = 0; i < inputs.length; i++ ){
+                var input = inputs.item(i);
+                input.style.borderColor = randomItem(color);
+            }
+            ul.style.color = randomItem(color);
+            
+            ul.innerHTML += '<li>' + randomItem(halills) + '</li>';
+        }
+
+        var reset = function(){
+            ul.innerHTML = '';
+        }
+
+        </script>
+</body>
+</html>
